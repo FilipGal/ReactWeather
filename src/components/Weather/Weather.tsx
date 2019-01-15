@@ -1,13 +1,11 @@
 import * as React from 'react'
+import { WeatherContainer } from './WeatherDisplay'
 
-const Weather = () => {
-  const [msg, setMsg] = React.useState<string>('')
-
+function Weather() {
   return (
     <div>
       <h1>Generic weather app incoming</h1>
-      <button onClick={() => setMsg('Sure why not')}>Are you hyped?</button>
-      <p>{msg}</p>
+      <WeatherContainer />
     </div>
   )
 }
